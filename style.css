@@ -317,3 +317,22 @@ footer strong {
         font-size: 1.8em;
     }
 }
+/* ========================================= */
+/* GOOGLE MAPS                               */
+/* ========================================= */
+.map-container {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden; /* Đảm bảo iframe được bo góc theo container */
+    position: relative;
+    padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+    height: 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
